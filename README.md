@@ -21,13 +21,13 @@ Server: http://localhost:8080/
 
 Enhance the client/server code to implement the following features: 
 
-* Implement Search by product name (server side search)
-* Implement add product to inventory
+* Implement Server side search by product name (any product contains the name)
+* Implement add product to inventory (uniqueness on product name)
 * Implement remove from inventory
 * Implement edit inventory items (name,price,quantity)
 
 **Notes:**
-- Use bootstrap to decorate the UI
+- Use bootstrap to decorate the UI (included)
 - Feel free to change the existing code as needed
 - Clean & Modular code is important 
  
