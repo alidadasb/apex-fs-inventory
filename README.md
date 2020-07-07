@@ -16,7 +16,7 @@ Client: http://localhost:4200/
 `gradlew bootRun`
 
 Server: http://localhost:8080/
-- 
+
 **Requirements**
 
 Enhance the client/server code to implement the following features: 
