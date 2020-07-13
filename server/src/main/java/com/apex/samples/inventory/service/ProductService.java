@@ -20,7 +20,6 @@ public class ProductService {
 
     public Collection<Product> getAllProduct() {
         return inventoryRepository.findAll();
-
     }
 
     public Optional<Product> findById(Integer id) {

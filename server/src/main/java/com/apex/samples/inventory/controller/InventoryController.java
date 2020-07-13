@@ -2,6 +2,7 @@ package com.apex.samples.inventory.controller;
 
 
 import com.apex.samples.inventory.entities.Product;
+import com.apex.samples.inventory.filters.ProductFilter;
 import com.apex.samples.inventory.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,9 @@ public class InventoryController {
 
     @GetMapping
     public ResponseEntity<Collection<Product>> getAllProducts() {
-        return ResponseEntity.ok(productService.getAllProduct());
+        Collection<Product> allProduct = productService.getAllProduct();
+
+        return ResponseEntity.ok(ProductFilter.removeRecalled(allProduct));
     }
 
     @PostMapping
